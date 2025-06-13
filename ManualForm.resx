@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="labelTotalProgressContent.Text" xml:space="preserve">
+    <value>Totale voortgang (onderin de applicatie)
+Onderaan het scherm bevindt zich een blauwe voortgangsbalk met het label "Gereed", gevolgd door een teller die aangeeft hoeveel personen succesvol zijn berekend, bijvoorbeeld Gereed: 2/2.
+
+De voortgangsbalk houdt bij hoeveel personen volledig zijn afgerond. Telkens wanneer een berekening succesvol wordt voltooid, stijgt de teller automatisch met één. Verwijder je daarna een persoon die al berekend was, dan wordt dit ook weer van de voortgang afgetrokken.
+
+Dankzij deze balk zie je in één oogopslag hoeveel personen al verwerkt zijn en of iedereen klaar is voordat je de applicatie afsluit of verdergaat met de resultaten.</value>
+  </data>
+  <data name="labelLogContent.Text" xml:space="preserve">
+    <value>Het logvenster toont meldingen van de applicatie tijdens het gebruik.
+Je ziet hier bijvoorbeeld of gegevens correct zijn geladen, of er fouten zijn gemaakt bij invoer of selectie,
+en of er waarschuwingen of technische informatie beschikbaar zijn voor debugging.
+
+Het logvenster is handig om te controleren of alles goed werkt en om inzicht te krijgen in de acties die de applicatie op de achtergrond uitvoert.</value>
+  </data>
+  <data name="labelCalculateJobContent.Text" xml:space="preserve">
+    <value>Als je personen en opleidingen hebt toegevoegd, kun je de baankansen laten berekenen.
+Klik op ‘Baan berekenen’ om het proces te starten. De laadbalk geeft aan dat de berekening bezig is. Voor elke persoon wordt bepaald met welke opleiding de grootste kans op een specifieke baan ontstaat.
+
+Zodra de berekening is voltooid, verschijnt de baankans in het blauwe vlak en de bijbehorende baan in het groene vlak.
+Daarnaast loopt de totale voortgang met één op per afgeronde persoon, zodat je direct ziet voor wie de berekening al klaar is en wie nog verwerkt moet worden.</value>
+  </data>
+  <data name="labelEditPersonContent.Text" xml:space="preserve">
+    <value>Rechtsboven in een profiel kun je op het potloodicoon klikken om een persoon te bewerken. Dit is alleen mogelijk als voor die persoon al een berekening is uitgevoerd.
+
+Als je op het potloodje klikt, wordt het profiel geel gemarkeerd en kun je de naam aanpassen.
+Klik je nog een keer op het potloodje, dan sluit je de bewerkmodus.
+
+Let op: de opleiding kan in bewerkmodus niet worden gewijzigd. Wil je deze aanpassen, klik dan eerst opnieuw op ‘Baan berekenen’ om fouten te voorkomen.</value>
+  </data>
+  <data name="labelChooseStudyContent.Text" xml:space="preserve">
+    <value>Voor elke persoon kies je één opleiding.
+Klik op het pijltje om het dropdownmenu te openen en selecteer een opleiding,
+of begin met typen om suggesties te zien. Je kunt ook met de pijltoetsen navigeren en op Enter drukken.
+
+Deze opleiding wordt later gebruikt om de baankans te berekenen.</value>
+  </data>
+  <data name="labelAddPersonContent.Text" xml:space="preserve">
+    <value>Klik op ‘Voeg persoon toe’ om een nieuw profiel aan te maken.
+
+Je krijgt een leeg veld waarin je een naam kunt typen en een opleiding kunt kiezen.
+
+De app wijst automatisch een avatar toe aan elke persoon.
+</value>
+  </data>
+  <data name="labelIntroContent.Text" xml:space="preserve">
+    <value>Welkom bij de Job Calculator!
+
+Ontdek met welke opleiding je de meeste kans maakt op jouw droombaan.
+Maak per persoon een profiel aan, selecteer de opleidingen, en laat de app het werk doen.
+Je ziet direct welke opleiding het beste aansluit bij de baan die je voor ogen hebt.
+
+Bekijk de tabs hierboven voor meer uitleg per onderdeel.</value>
+  </data>
+  <data name="labelManageContent.Text" xml:space="preserve">
+    <value>Bovenaan in de applicatie vind je het menu ‘Beheer’, met daaronder drie belangrijke functies om de applicatie te beheren. Let op: bij zowel Initialisatie als Reset gaat alle voortgang verloren.
+
+Initialisatie
+Zet de volledige applicatie terug naar de oorspronkelijke staat. De database wordt opnieuw opgebouwd en alle personen, instellingen en resultaten worden gewist.
+
+Reset
+Verwijdert alle personen en resultaten, maar laat de bestaande database intact. Gebruik dit als je opnieuw wilt beginnen zonder de database te herbouwen.
+
+Afsluiten
+Beëindigt alle actieve processen en sluit de applicatie volledig af, ook op de achtergrond.
+Alle gegevens blijven bewaard, mits een persoon succesvol is berekend. Niet-berekende personen worden niet opgeslagen.
+</value>
+  </data>
+</root>

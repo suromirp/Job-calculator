@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Algemene projectinstellingen -->
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<RootNamespace>Eindopdracht___Programmeren_in_C____LOI</RootNamespace>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<!-- Genereren van XML documentatie naast de assembly -->
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<!-- Custom applicatie icon -->
+		<ApplicationIcon>Assets/Icons/Job-Calculator.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<!--Embedded resources -->
+	<ItemGroup>
+		<EmbeddedResource Include="Data\SQLite.db" />
+		<EmbeddedResource Include="Assets\Fallback\**\*.png" />
+	</ItemGroup>
+
+	<!-- NuGet-refs -->
+	<ItemGroup>
+		<PackageReference Include="System.Data.SQLite" Version="1.0.119" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Update="Properties\Settings.Designer.cs">
+	    <DesignTimeSharedInput>True</DesignTimeSharedInput>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Settings.settings</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Update="Properties\Settings.settings">
+	    <Generator>SettingsSingleFileGenerator</Generator>
+	    <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+	  </None>
+	</ItemGroup>
+	
+		<!-- Publicatie instellingen (alleen bij dotnet publish) -->
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>true</SelfContained>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+		<CopyEmbeddedFilesToSingleFile>true</CopyEmbeddedFilesToSingleFile>
+		<PublishTrimmed>false</PublishTrimmed>
+	</PropertyGroup>
+</Project>
